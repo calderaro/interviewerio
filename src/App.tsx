@@ -33,27 +33,19 @@ function Question({
   question,
   onSubmit,
   onNext,
+  onSelectedAnswer,
   showExplanation,
   isAnswerCorrect,
   selectedAnswer,
 }: {
   question: Question;
-  onSubmit: (answer: string) => void;
+  onSubmit: () => void;
   onNext: () => void;
+  onSelectedAnswer: (value: string) => void;
   showExplanation: boolean;
   isAnswerCorrect: boolean | null;
   selectedAnswer: string | null;
 }) {
-  const [localSelectedAnswer, setLocalSelectedAnswer] = useState<string | null>(
-    selectedAnswer
-  );
-
-  const handleSubmit = () => {
-    if (localSelectedAnswer) {
-      onSubmit(localSelectedAnswer);
-    }
-  };
-
   return (
     <Card className="w-full max-w-2xl">
       <CardHeader>
@@ -61,8 +53,9 @@ function Question({
       </CardHeader>
       <CardContent>
         <RadioGroup
-          onValueChange={(value) => setLocalSelectedAnswer(value)}
-          value={localSelectedAnswer || undefined}
+          id={question.id}
+          onValueChange={(value) => onSelectedAnswer(value)}
+          value={selectedAnswer || ""}
         >
           {question.options.map((option) => (
             <div key={option.id} className="flex items-center space-x-2">
@@ -92,7 +85,7 @@ function Question({
         {showExplanation ? (
           <Button onClick={onNext}>Next Question</Button>
         ) : (
-          <Button onClick={handleSubmit} disabled={!localSelectedAnswer}>
+          <Button onClick={() => onSubmit()} disabled={!selectedAnswer}>
             Submit Answer
           </Button>
         )}
@@ -109,13 +102,15 @@ export default function App() {
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState<boolean | null>(null);
 
-  const handleSubmit = (answer: string) => {
-    setSelectedAnswer(answer);
-    const correct = answer === quizData[currentQuestionIndex].answer;
+  const handleSubmit = () => {
+    const correct = selectedAnswer === quizData[currentQuestionIndex].answer;
+
     setIsAnswerCorrect(correct);
+
     if (correct) {
       setScore(score + 1);
     }
+
     setShowExplanation(true);
   };
 
@@ -123,6 +118,7 @@ export default function App() {
     setShowExplanation(false);
     setSelectedAnswer(null);
     setIsAnswerCorrect(null);
+
     if (currentQuestionIndex < quizData.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
     } else {
@@ -162,6 +158,7 @@ export default function App() {
         question={quizData[currentQuestionIndex]}
         onSubmit={handleSubmit}
         onNext={handleNext}
+        onSelectedAnswer={setSelectedAnswer}
         showExplanation={showExplanation}
         isAnswerCorrect={isAnswerCorrect}
         selectedAnswer={selectedAnswer}
