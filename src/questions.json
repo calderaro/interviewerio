@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "1",
+    "label": "What is the difference between `let`, `const`, and `var`?",
+    "answer": "2",
+    "explanation": "let and const are block-scoped, meaning they only exist within the block they are declared in, while var is function-scoped, meaning it is accessible within the function it is declared in.",
+    "options": [
+      {
+        "id": "1",
+        "label": "There is no difference; they are all the same."
+      },
+      {
+        "id": "2",
+        "label": "let and const have block scope, while var has function scope."
+      },
+      {
+        "id": "3",
+        "label": "var and let are hoisted, but const is not."
+      },
+      {
+        "id": "4",
+        "label": "const and var have global scope, while let has block scope."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "label": "How does the `this` keyword work in JavaScript?",
+    "answer": "3",
+    "explanation": "In JavaScript, this refers to the object that is currently executing the code. In a method, this refers to the object the method belongs to.",
+    "options": [
+      {
+        "id": "1",
+        "label": "this always refers to the global object."
+      },
+      {
+        "id": "2",
+        "label": "this refers to the function in which it is used."
+      },
+      {
+        "id": "3",
+        "label": "this refers to the object from which the method was called."
+      },
+      {
+        "id": "4",
+        "label": "this is a keyword that refers to the previous function."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "Can you explain what closures are and provide an example?",
+    "answer": "1",
+    "explanation": "A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope.",
+    "options": [
+      {
+        "id": "1",
+        "label": "A closure is a function that retains access to its lexical scope, even when the function is executed outside that scope."
+      },
+      {
+        "id": "2",
+        "label": "A closure is a special type of variable that holds the state of a function."
+      },
+      {
+        "id": "3",
+        "label": "Closures are only used in object-oriented programming in JavaScript."
+      },
+      {
+        "id": "4",
+        "label": "Closures are a debugging tool used to trace the execution of functions."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "label": "What are the different data types in JavaScript?",
+    "answer": "3",
+    "explanation": "JavaScript has several data types, including Undefined, Null, Boolean, Number, String, Symbol, Object, and BigInt.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Number, String, Symbol."
+      },
+      {
+        "id": "2",
+        "label": "Undefined, Null, Boolean."
+      },
+      {
+        "id": "3",
+        "label": "Undefined, Null, Boolean, Number, String, Symbol, Object, and BigInt."
+      },
+      {
+        "id": "4",
+        "label": "String, Boolean, Null."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "label": "How do you create and use objects in JavaScript?",
+    "answer": "4",
+    "explanation": "Objects in JavaScript can be created using object literals, the new keyword, or Object.create(). They are used to store collections of data and more complex entities.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Using the array literal syntax."
+      },
+      {
+        "id": "2",
+        "label": "Using functions only."
+      },
+      {
+        "id": "3",
+        "label": "JavaScript does not support objects."
+      },
+      {
+        "id": "4",
+        "label": "Using object literals, the new keyword, or Object.create()."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "label": "What is the difference between `==` and `===`?",
+    "answer": "2",
+    "explanation": "`==` performs type coercion before comparing two values, while `===` does not, making `===` the strict equality operator.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`==` is used for comparison, while `===` is used for assignment."
+      },
+      {
+        "id": "2",
+        "label": "`==` checks for equality after type coercion, while `===` checks for equality without type coercion."
+      },
+      {
+        "id": "3",
+        "label": "`==` is used to compare numbers, while `===` is used to compare strings."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference; both operators do the same thing."
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "label": "How do arrow functions differ from regular functions?",
+    "answer": "4",
+    "explanation": "Arrow functions do not have their own `this` context; instead, they inherit `this` from the surrounding lexical context.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Arrow functions cannot take parameters."
+      },
+      {
+        "id": "2",
+        "label": "Arrow functions have a different syntax, but behave the same as regular functions."
+      },
+      {
+        "id": "3",
+        "label": "Arrow functions can only be used within objects."
+      },
+      {
+        "id": "4",
+        "label": "Arrow functions do not have their own `this` context."
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "label": "What are template literals, and how are they used?",
+    "answer": "2",
+    "explanation": "Template literals are string literals allowing embedded expressions, which are enclosed by backticks (`) instead of quotes.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Template literals are a way to define arrays."
+      },
+      {
+        "id": "2",
+        "label": "Template literals allow embedded expressions and are enclosed by backticks (`)."
+      },
+      {
+        "id": "3",
+        "label": "Template literals are used to template functions."
+      },
+      {
+        "id": "4",
+        "label": "Template literals are special types of functions."
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "label": "Can you explain how the prototype chain works in JavaScript?",
+    "answer": "1",
+    "explanation": "In JavaScript, objects have a prototype, and this prototype can have its own prototype, forming a chain that ends when a null prototype is reached.",
+    "options": [
+      {
+        "id": "1",
+        "label": "The prototype chain is a mechanism by which objects inherit features from one another."
+      },
+      {
+        "id": "2",
+        "label": "The prototype chain is used to chain promises."
+      },
+      {
+        "id": "3",
+        "label": "The prototype chain is a way to handle event listeners."
+      },
+      {
+        "id": "4",
+        "label": "The prototype chain is used to iterate over arrays."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "label": "What is event bubbling and event capturing?",
+    "answer": "3",
+    "explanation": "Event bubbling is when an event starts from the deepest element and propagates up, while event capturing starts from the outermost element and propagates down to the target.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Event bubbling is a way to handle CSS events."
+      },
+      {
+        "id": "2",
+        "label": "Event capturing is a method to catch asynchronous events."
+      },
+      {
+        "id": "3",
+        "label": "Event bubbling propagates from child to parent, and capturing propagates from parent to child."
+      },
+      {
+        "id": "4",
+        "label": "Event bubbling and capturing are used in promise chaining."
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "label": "How do you create a promise in JavaScript?",
+    "answer": "1",
+    "explanation": "A promise is created using the Promise constructor which takes a function (executor) with resolve and reject parameters.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the Promise constructor and providing a resolver function."
+      },
+      {
+        "id": "2",
+        "label": "By calling the async function."
+      },
+      {
+        "id": "3",
+        "label": "By using setTimeout function."
+      },
+      {
+        "id": "4",
+        "label": "By creating a new callback function."
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "label": "What is the event loop, and how does it work?",
+    "answer": "2",
+    "explanation": "The event loop is a mechanism that handles asynchronous callbacks by placing them in a queue and executing them when the call stack is empty.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It's a function that loops through all DOM events."
+      },
+      {
+        "id": "2",
+        "label": "It's a process that handles and coordinates asynchronous and synchronous code execution."
+      },
+      {
+        "id": "3",
+        "label": "It's a method to iterate over arrays."
+      },
+      {
+        "id": "4",
+        "label": "It's a debugging tool used in JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "label": "How does JavaScript handle asynchronous operations?",
+    "answer": "3",
+    "explanation": "JavaScript handles asynchronous operations using callbacks, promises, and async/await syntax which allow non-blocking execution.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By executing all operations synchronously."
+      },
+      {
+        "id": "2",
+        "label": "Asynchronous operations are not supported in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "Through mechanisms like callbacks, promises, and async/await."
+      },
+      {
+        "id": "4",
+        "label": "By creating multiple threads for each operation."
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "label": "What is hoisting in JavaScript?",
+    "answer": "2",
+    "explanation": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope before code execution.",
+    "options": [
+      {
+        "id": "1",
+        "label": "A method to prioritize event handling."
+      },
+      {
+        "id": "2",
+        "label": "The default behavior of moving declarations to the top of their scope."
+      },
+      {
+        "id": "3",
+        "label": "A way to optimize memory usage in JavaScript."
+      },
+      {
+        "id": "4",
+        "label": "A process of converting synchronous code to asynchronous."
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "label": "Can you explain what the `bind()`, `call()`, and `apply()` methods do?",
+    "answer": "1",
+    "explanation": "These methods are used to set the `this` context of a function. `call()` and `apply()` invoke the function immediately, while `bind()` returns a new function with bound context.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They are used to set the value of 'this' and invoke functions with specified context."
+      },
+      {
+        "id": "2",
+        "label": "They are used to create new objects from existing ones."
+      },
+      {
+        "id": "3",
+        "label": "They are event handling methods in JavaScript."
+      },
+      {
+        "id": "4",
+        "label": "They are used to bind variables to functions permanently."
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "label": "How does destructuring work in JavaScript?",
+    "answer": "3",
+    "explanation": "Destructuring allows unpacking values from arrays or properties from objects into distinct variables.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By breaking down functions into smaller parts."
+      },
+      {
+        "id": "2",
+        "label": "By removing properties from objects permanently."
+      },
+      {
+        "id": "3",
+        "label": "By extracting values from arrays or objects into separate variables."
+      },
+      {
+        "id": "4",
+        "label": "By converting objects into arrays."
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "label": "What is the difference between `null` and `undefined`?",
+    "answer": "4",
+    "explanation": "`undefined` means a variable has been declared but not assigned a value, while `null` is an assignment value that represents no value.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`null` is a type, while `undefined` is an object."
+      },
+      {
+        "id": "2",
+        "label": "They are both identical and can be used interchangeably."
+      },
+      {
+        "id": "3",
+        "label": "`undefined` is used in strict mode only, while `null` is not."
+      },
+      {
+        "id": "4",
+        "label": "`undefined` means a variable lacks a value, while `null` explicitly indicates no value."
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "label": "How do you convert a string to a number in JavaScript?",
+    "answer": "1",
+    "explanation": "You can convert a string to a number using functions like `parseInt()`, `parseFloat()`, the unary plus operator `+`, or `Number()` constructor.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Using methods like parseInt(), parseFloat(), Number(), or the unary plus operator."
+      },
+      {
+        "id": "2",
+        "label": "By appending '.toNumber()' to the string."
+      },
+      {
+        "id": "3",
+        "label": "Strings cannot be converted to numbers in JavaScript."
+      },
+      {
+        "id": "4",
+        "label": "By using the Math.convert() method."
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "label": "What is the difference between `map()` and `forEach()`?",
+    "answer": "2",
+    "explanation": "`map()` returns a new array with the results of calling a function on every element, while `forEach()` executes a function on each element but does not return a new array.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`map()` is used for arrays, `forEach()` is used for objects."
+      },
+      {
+        "id": "2",
+        "label": "`map()` returns a new array, while `forEach()` does not return anything."
+      },
+      {
+        "id": "3",
+        "label": "`forEach()` can be chained, but `map()` cannot."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference; they perform the same operation."
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "label": "How do you deep clone an object in JavaScript?",
+    "answer": "3",
+    "explanation": "Deep cloning can be done using methods like JSON.parse(JSON.stringify(obj)), structuredClone(obj), or recursive cloning functions.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the assignment operator '='."
+      },
+      {
+        "id": "2",
+        "label": "By using Object.assign({}, obj)."
+      },
+      {
+        "id": "3",
+        "label": "By using JSON.parse(JSON.stringify(obj)) or structuredClone(obj)."
+      },
+      {
+        "id": "4",
+        "label": "By referencing the original object directly."
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "label": "How do you implement inheritance in JavaScript?",
+    "answer": "2",
+    "explanation": "Inheritance in JavaScript can be implemented using prototypes, classes (introduced in ES6), or Object.create().",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the 'inherit' keyword."
+      },
+      {
+        "id": "2",
+        "label": "By using prototypes, classes, or Object.create()."
+      },
+      {
+        "id": "3",
+        "label": "Inheritance is not supported in JavaScript."
+      },
+      {
+        "id": "4",
+        "label": "By copying objects directly."
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "label": "What is the difference between synchronous and asynchronous code?",
+    "answer": "3",
+    "explanation": "Synchronous code is executed in sequence, blocking further code until execution is complete, while asynchronous code allows other code to run concurrently.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Synchronous code is faster than asynchronous code."
+      },
+      {
+        "id": "2",
+        "label": "Asynchronous code cannot be used in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "Synchronous code blocks execution, while asynchronous code does not."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference between the two."
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "label": "How does JavaScript handle errors, and what is the purpose of `try/catch`?",
+    "answer": "4",
+    "explanation": "`try/catch` is used to handle errors in JavaScript by attempting to run code in the `try` block and catching any errors in the `catch` block.",
+    "options": [
+      {
+        "id": "1",
+        "label": "JavaScript ignores errors automatically."
+      },
+      {
+        "id": "2",
+        "label": "Errors are logged but not handled in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "`try/catch` prevents code from being executed."
+      },
+      {
+        "id": "4",
+        "label": "`try/catch` handles errors by catching exceptions in the `catch` block."
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "label": "What is the difference between `slice()` and `splice()`?",
+    "answer": "1",
+    "explanation": "`slice()` returns a new array with selected elements, while `splice()` modifies the original array by adding or removing elements.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`slice()` creates a new array, while `splice()` modifies the original array."
+      },
+      {
+        "id": "2",
+        "label": "`slice()` is used for strings, while `splice()` is used for arrays."
+      },
+      {
+        "id": "3",
+        "label": "`splice()` is a non-destructive method, while `slice()` is destructive."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference between the two."
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "label": "How does the `reduce()` function work, and when would you use it?",
+    "answer": "3",
+    "explanation": "`reduce()` applies a function to each element of an array, resulting in a single output value, and is often used for summing, averaging, or other aggregate operations.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`reduce()` reduces the size of an array."
+      },
+      {
+        "id": "2",
+        "label": "`reduce()` removes elements from an array."
+      },
+      {
+        "id": "3",
+        "label": "`reduce()` reduces an array to a single value using a reducer function."
+      },
+      {
+        "id": "4",
+        "label": "`reduce()` is used to filter elements in an array."
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "label": "What are modules in JavaScript, and how do you use them?",
+    "answer": "2",
+    "explanation": "Modules are reusable pieces of code in JavaScript that can be imported and exported using ES6 syntax (import/export).",
+    "options": [
+      {
+        "id": "1",
+        "label": "Modules are a way to define CSS styles."
+      },
+      {
+        "id": "2",
+        "label": "Modules are reusable pieces of code that can be imported and exported."
+      },
+      {
+        "id": "3",
+        "label": "Modules are only available in Node.js."
+      },
+      {
+        "id": "4",
+        "label": "Modules are used to handle JSON data."
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "label": "Can you explain the difference between `localStorage`, `sessionStorage`, and cookies?",
+    "answer": "4",
+    "explanation": "`localStorage` stores data with no expiration, `sessionStorage` stores data for a session, and cookies store data with expiration, sent with server requests.",
+    "options": [
+      {
+        "id": "1",
+        "label": "There is no difference between them."
+      },
+      {
+        "id": "2",
+        "label": "`localStorage` and `sessionStorage` are identical."
+      },
+      {
+        "id": "3",
+        "label": "`cookies` are used only for authentication."
+      },
+      {
+        "id": "4",
+        "label": "`localStorage` persists indefinitely, `sessionStorage` lasts per session, and `cookies` have an expiration and are sent with requests."
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "label": "What are generators in JavaScript, and how do they work?",
+    "answer": "1",
+    "explanation": "Generators are functions that can pause execution and yield multiple values using the `yield` keyword and `function*` syntax.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Generators are functions that can pause and resume execution."
+      },
+      {
+        "id": "2",
+        "label": "Generators are a type of loop in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "Generators automatically generate numbers."
+      },
+      {
+        "id": "4",
+        "label": "Generators are used to create objects."
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "label": "How do you debounce or throttle a function?",
+    "answer": "3",
+    "explanation": "Debouncing delays function execution until after a certain time has passed, while throttling limits function execution to once per specified period.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using a loop to control execution."
+      },
+      {
+        "id": "2",
+        "label": "By setting the function as async."
+      },
+      {
+        "id": "3",
+        "label": "By implementing timing functions that control the frequency of execution."
+      },
+      {
+        "id": "4",
+        "label": "By limiting the number of function calls manually."
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "label": "What is the difference between `Object.keys()`, `Object.values()`, and `Object.entries()`?",
+    "answer": "2",
+    "explanation": "`Object.keys()` returns keys, `Object.values()` returns values, and `Object.entries()` returns both as key-value pairs in an array.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They all return the same result."
+      },
+      {
+        "id": "2",
+        "label": "`Object.keys()` returns keys, `Object.values()` returns values, and `Object.entries()` returns key-value pairs."
+      },
+      {
+        "id": "3",
+        "label": "`Object.keys()` and `Object.values()` are identical."
+      },
+      {
+        "id": "4",
+        "label": "`Object.entries()` returns only the values."
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "label": "How do you handle deep object comparison in JavaScript?",
+    "answer": "1",
+    "explanation": "Deep object comparison can be done by recursively checking the properties of objects to ensure all nested properties are identical.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By recursively checking each property in the objects."
+      },
+      {
+        "id": "2",
+        "label": "By using the == operator."
+      },
+      {
+        "id": "3",
+        "label": "By converting objects to strings and comparing."
+      },
+      {
+        "id": "4",
+        "label": "By comparing the memory addresses of the objects."
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "label": "What are rest and spread operators, and how are they used?",
+    "answer": "2",
+    "explanation": "Rest and spread operators are represented by `...`. The rest operator collects all remaining elements, while the spread operator expands elements into individual elements.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Rest is used for arrays, spread is used for objects."
+      },
+      {
+        "id": "2",
+        "label": "Both are represented by `...`, with rest gathering elements and spread distributing them."
+      },
+      {
+        "id": "3",
+        "label": "Rest and spread are identical."
+      },
+      {
+        "id": "4",
+        "label": "Spread is used for functions, rest is used for variables."
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "label": "How do you create private variables in JavaScript?",
+    "answer": "3",
+    "explanation": "Private variables can be created using closures or the new class syntax (using `#` before a variable).",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the `var` keyword."
+      },
+      {
+        "id": "2",
+        "label": "JavaScript does not support private variables."
+      },
+      {
+        "id": "3",
+        "label": "Using closures or the `#` prefix in classes."
+      },
+      {
+        "id": "4",
+        "label": "By defining variables inside functions only."
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "label": "Can you explain how the `new` keyword works in JavaScript?",
+    "answer": "1",
+    "explanation": "The `new` keyword creates a new instance of an object with a constructor function, setting `this` to refer to the new object.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It creates an instance of an object from a constructor function."
+      },
+      {
+        "id": "2",
+        "label": "It adds new methods to existing objects."
+      },
+      {
+        "id": "3",
+        "label": "It creates a new variable in the global scope."
+      },
+      {
+        "id": "4",
+        "label": "It adds properties to an object."
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "label": "What is a promise chain, and how does it help in handling asynchronous code?",
+    "answer": "2",
+    "explanation": "A promise chain allows multiple asynchronous operations to be chained together, passing results from one to the next, ensuring sequential execution.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It chains multiple callbacks together."
+      },
+      {
+        "id": "2",
+        "label": "It sequences asynchronous operations by chaining promises together."
+      },
+      {
+        "id": "3",
+        "label": "It converts synchronous code to asynchronous."
+      },
+      {
+        "id": "4",
+        "label": "It helps in debugging promises."
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "label": "How do you handle async/await errors?",
+    "answer": "3",
+    "explanation": "Errors in async/await can be handled using try/catch blocks or by attaching a .catch() method to the promise.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using `finally` only."
+      },
+      {
+        "id": "2",
+        "label": "Errors are automatically handled in async functions."
+      },
+      {
+        "id": "3",
+        "label": "Using try/catch blocks or .catch() method."
+      },
+      {
+        "id": "4",
+        "label": "Errors cannot be handled in async/await."
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "label": "What are proxies in JavaScript, and how do you use them?",
+    "answer": "1",
+    "explanation": "Proxies are used to define custom behavior for fundamental operations on objects, such as property lookup, assignment, or function invocation.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Proxies define custom behavior for basic operations on objects."
+      },
+      {
+        "id": "2",
+        "label": "Proxies are used to clone objects."
+      },
+      {
+        "id": "3",
+        "label": "Proxies automatically handle API requests."
+      },
+      {
+        "id": "4",
+        "label": "Proxies are used to create new data types."
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "label": "What is memoization, and how does it work in JavaScript?",
+    "answer": "4",
+    "explanation": "Memoization is an optimization technique where the results of expensive function calls are cached and returned when the same inputs occur again.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It is a method for compressing data in JavaScript."
+      },
+      {
+        "id": "2",
+        "label": "It is a technique to delay execution of functions."
+      },
+      {
+        "id": "3",
+        "label": "It automatically optimizes JavaScript code."
+      },
+      {
+        "id": "4",
+        "label": "It caches the results of expensive function calls for reuse."
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "label": "How does the `typeof` operator work?",
+    "answer": "2",
+    "explanation": "The `typeof` operator returns a string indicating the type of the operand, such as 'number', 'string', 'boolean', 'object', etc.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It returns the variable name."
+      },
+      {
+        "id": "2",
+        "label": "It returns a string indicating the type of the operand."
+      },
+      {
+        "id": "3",
+        "label": "It converts the variable to the specified type."
+      },
+      {
+        "id": "4",
+        "label": "It creates a new type for the variable."
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "label": "What are tagged template literals?",
+    "answer": "3",
+    "explanation": "Tagged template literals allow you to parse template literals with a function, enabling custom processing of the template.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They are used to create HTML templates."
+      },
+      {
+        "id": "2",
+        "label": "They are a special type of array."
+      },
+      {
+        "id": "3",
+        "label": "They allow custom processing of template literals with a function."
+      },
+      {
+        "id": "4",
+        "label": "They automatically generate HTML from strings."
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "label": "How does JavaScript's garbage collection work?",
+    "answer": "3",
+    "explanation": "JavaScript's garbage collection automatically reclaims memory by removing objects that are no longer reachable or in use, typically through a process called mark-and-sweep.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It runs manually by the developer."
+      },
+      {
+        "id": "2",
+        "label": "It only works when the browser is closed."
+      },
+      {
+        "id": "3",
+        "label": "It automatically reclaims memory by removing unreachable objects."
+      },
+      {
+        "id": "4",
+        "label": "Garbage collection is not supported in JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "42",
+    "label": "What is the difference between shallow copy and deep copy?",
+    "answer": "2",
+    "explanation": "A shallow copy copies only the immediate properties of an object, while a deep copy duplicates everything, including nested objects and arrays.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They are identical; both copy all properties."
+      },
+      {
+        "id": "2",
+        "label": "Shallow copy copies immediate properties, deep copy duplicates all nested structures."
+      },
+      {
+        "id": "3",
+        "label": "Deep copy is faster than shallow copy."
+      },
+      {
+        "id": "4",
+        "label": "Shallow copy is recursive, while deep copy is not."
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "label": "How do you implement function currying?",
+    "answer": "1",
+    "explanation": "Function currying is a technique of transforming a function that takes multiple arguments into a sequence of functions, each taking a single argument.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By transforming a function that takes multiple arguments into a series of functions with a single argument."
+      },
+      {
+        "id": "2",
+        "label": "By creating a new function within another function."
+      },
+      {
+        "id": "3",
+        "label": "By binding a function to a specific context."
+      },
+      {
+        "id": "4",
+        "label": "By converting a function to an array."
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "label": "What is the significance of `use strict` in JavaScript?",
+    "answer": "2",
+    "explanation": "`use strict` is a directive that enables strict mode, which helps catch common coding errors and prevents the use of certain problematic features.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It speeds up JavaScript execution."
+      },
+      {
+        "id": "2",
+        "label": "It enables strict mode, catching common errors and unsafe actions."
+      },
+      {
+        "id": "3",
+        "label": "It allows the use of older JavaScript syntax."
+      },
+      {
+        "id": "4",
+        "label": "It is used to define global variables."
+      }
+    ]
+  },
+  {
+    "id": "45",
+    "label": "Can you explain how WeakMap and WeakSet work?",
+    "answer": "4",
+    "explanation": "WeakMap and WeakSet are collections that hold weak references to objects, meaning they do not prevent garbage collection if the object has no other references.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They are used to store primitive values."
+      },
+      {
+        "id": "2",
+        "label": "They are identical to Map and Set."
+      },
+      {
+        "id": "3",
+        "label": "They prevent objects from being modified."
+      },
+      {
+        "id": "4",
+        "label": "They hold weak references to objects, allowing garbage collection."
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "label": "What is the difference between `apply` and `call` in JavaScript?",
+    "answer": "1",
+    "explanation": "`apply` and `call` both invoke functions with a specified `this` value, but `apply` accepts arguments as an array, while `call` accepts them individually.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`apply` accepts arguments as an array, while `call` accepts them individually."
+      },
+      {
+        "id": "2",
+        "label": "`apply` binds the function, `call` does not."
+      },
+      {
+        "id": "3",
+        "label": "`call` is asynchronous, `apply` is synchronous."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference; they are interchangeable."
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "label": "How do you manage memory leaks in JavaScript?",
+    "answer": "3",
+    "explanation": "Memory leaks can be managed by avoiding global variables, clearing timers and event listeners, and using tools like Chrome DevTools to monitor memory usage.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By increasing the stack size."
+      },
+      {
+        "id": "2",
+        "label": "Memory leaks cannot be managed in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "By avoiding global variables, clearing timers, and monitoring memory usage."
+      },
+      {
+        "id": "4",
+        "label": "By using strict mode to automatically clean up memory."
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "label": "What is the purpose of the `Symbol` data type?",
+    "answer": "4",
+    "explanation": "The `Symbol` data type is used to create unique, immutable identifiers that are not enumerable in loops, often used for object properties.",
+    "options": [
+      {
+        "id": "1",
+        "label": "To store numbers as strings."
+      },
+      {
+        "id": "2",
+        "label": "To define private variables."
+      },
+      {
+        "id": "3",
+        "label": "To manage asynchronous operations."
+      },
+      {
+        "id": "4",
+        "label": "To create unique, immutable identifiers for object properties."
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "label": "How do you implement inheritance with classes in ES6?",
+    "answer": "2",
+    "explanation": "Inheritance in ES6 classes is implemented using the `extends` keyword to create a subclass, and `super()` to call the parent class constructor.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the `prototype` property."
+      },
+      {
+        "id": "2",
+        "label": "By using the `extends` keyword and calling `super()` in the constructor."
+      },
+      {
+        "id": "3",
+        "label": "By copying all methods manually."
+      },
+      {
+        "id": "4",
+        "label": "ES6 does not support inheritance."
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "label": "What are iterators in JavaScript, and how do they work?",
+    "answer": "1",
+    "explanation": "Iterators are objects that define a sequence and potentially a return value upon iteration, using the `next()` method to yield each value.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Iterators define sequences and use the `next()` method to return values."
+      },
+      {
+        "id": "2",
+        "label": "Iterators are used to sort arrays."
+      },
+      {
+        "id": "3",
+        "label": "They are a way to clone objects."
+      },
+      {
+        "id": "4",
+        "label": "They automatically iterate over object properties."
+      }
+    ]
+  },
+  {
+    "id": "51",
+    "label": "What is a pure function, and why is it important?",
+    "answer": "2",
+    "explanation": "A pure function is a function that always returns the same output given the same input and has no side effects, making it important for predictable and testable code.",
+    "options": [
+      {
+        "id": "1",
+        "label": "A function that is defined globally."
+      },
+      {
+        "id": "2",
+        "label": "A function that returns the same output for the same input and has no side effects."
+      },
+      {
+        "id": "3",
+        "label": "A function that mutates its arguments."
+      },
+      {
+        "id": "4",
+        "label": "A function that is only used in functional programming."
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "label": "How do you create and manage custom events in JavaScript?",
+    "answer": "4",
+    "explanation": "Custom events can be created using the `CustomEvent` constructor and managed by dispatching them with `dispatchEvent()` and listening with `addEventListener()`.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using `setInterval` to poll for changes."
+      },
+      {
+        "id": "2",
+        "label": "By overriding existing browser events."
+      },
+      {
+        "id": "3",
+        "label": "By modifying the event loop directly."
+      },
+      {
+        "id": "4",
+        "label": "By using `CustomEvent`, `dispatchEvent()`, and `addEventListener()`."
+      }
+    ]
+  },
+  {
+    "id": "53",
+    "label": "Can you explain the difference between microtasks and macrotasks?",
+    "answer": "3",
+    "explanation": "Microtasks (e.g., promises) are processed after the currently executing script and before any macrotasks (e.g., setTimeout), which are processed in the event loop.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Microtasks are for synchronous code, macrotasks are for asynchronous code."
+      },
+      {
+        "id": "2",
+        "label": "Macrotasks run before microtasks in the event loop."
+      },
+      {
+        "id": "3",
+        "label": "Microtasks run before macrotasks in the event loop."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference; both are handled the same way."
+      }
+    ]
+  },
+  {
+    "id": "54",
+    "label": "What is the purpose of `Function.prototype.bind()`?",
+    "answer": "1",
+    "explanation": "`bind()` is used to create a new function with a specific `this` value and, optionally, initial arguments, allowing for more flexible function invocation.",
+    "options": [
+      {
+        "id": "1",
+        "label": "To create a new function with a bound `this` value."
+      },
+      {
+        "id": "2",
+        "label": "To directly invoke a function with a specific context."
+      },
+      {
+        "id": "3",
+        "label": "To change the prototype of an object."
+      },
+      {
+        "id": "4",
+        "label": "To prevent a function from being invoked."
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "label": "How does the `instanceof` operator work?",
+    "answer": "4",
+    "explanation": "`instanceof` checks if an object is an instance of a specific constructor or class, by verifying its prototype chain.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It checks if an object has a specific property."
+      },
+      {
+        "id": "2",
+        "label": "It determines the size of an object."
+      },
+      {
+        "id": "3",
+        "label": "It compares two objects for equality."
+      },
+      {
+        "id": "4",
+        "label": "It checks if an object is an instance of a specific constructor or class."
+      }
+    ]
+  },
+  {
+    "id": "56",
+    "label": "What is tail call optimization?",
+    "answer": "2",
+    "explanation": "Tail call optimization is an optimization technique where the last function call in a function is optimized to prevent additional stack frames, saving memory.",
+    "options": [
+      {
+        "id": "1",
+        "label": "A way to speed up loops."
+      },
+      {
+        "id": "2",
+        "label": "An optimization that reuses stack frames for tail-recursive functions."
+      },
+      {
+        "id": "3",
+        "label": "A method to increase function call stack size."
+      },
+      {
+        "id": "4",
+        "label": "An optimization that improves memory usage in arrays."
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "label": "Can you explain what a generator function is and provide an example?",
+    "answer": "1",
+    "explanation": "A generator function is a function that can pause its execution and yield values one at a time, resuming from where it left off using the `function*` syntax.",
+    "options": [
+      {
+        "id": "1",
+        "label": "A function that can pause execution and yield multiple values."
+      },
+      {
+        "id": "2",
+        "label": "A function that automatically generates objects."
+      },
+      {
+        "id": "3",
+        "label": "A function that creates new functions dynamically."
+      },
+      {
+        "id": "4",
+        "label": "A function used to handle exceptions."
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "label": "How do you handle race conditions in JavaScript?",
+    "answer": "3",
+    "explanation": "Race conditions can be handled by synchronizing asynchronous operations, using techniques like locks, promises, or async/await to ensure correct execution order.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By avoiding asynchronous code entirely."
+      },
+      {
+        "id": "2",
+        "label": "Race conditions cannot be handled in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "By synchronizing operations with promises, async/await, or locks."
+      },
+      {
+        "id": "4",
+        "label": "By running code in strict mode."
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "label": "What are higher-order functions in JavaScript?",
+    "answer": "2",
+    "explanation": "Higher-order functions are functions that can take other functions as arguments, return functions as their result, or both, enabling more flexible and modular code.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Functions that return multiple values."
+      },
+      {
+        "id": "2",
+        "label": "Functions that can take other functions as arguments or return them."
+      },
+      {
+        "id": "3",
+        "label": "Functions that execute in the global scope."
+      },
+      {
+        "id": "4",
+        "label": "Functions that run asynchronously."
+      }
+    ]
+  },
+  {
+    "id": "60",
+    "label": "How does the `async` and `await` syntax work?",
+    "answer": "1",
+    "explanation": "`async` functions return promises, and `await` pauses the execution of the async function until the promise is resolved, simplifying asynchronous code.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`async` functions return promises, and `await` pauses execution until the promise resolves."
+      },
+      {
+        "id": "2",
+        "label": "`async` makes functions run synchronously, and `await` delays execution."
+      },
+      {
+        "id": "3",
+        "label": "`await` is used inside regular functions, and `async` is used in loops."
+      },
+      {
+        "id": "4",
+        "label": "`async` makes functions faster, and `await` slows them down."
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "label": "How do you manipulate the DOM using vanilla JavaScript?",
+    "answer": "1",
+    "explanation": "DOM manipulation can be done using methods like `getElementById`, `querySelector`, `createElement`, `appendChild`, and setting element properties directly.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Using methods like `getElementById`, `querySelector`, and `appendChild`."
+      },
+      {
+        "id": "2",
+        "label": "By using a JavaScript library only."
+      },
+      {
+        "id": "3",
+        "label": "By editing the HTML file directly."
+      },
+      {
+        "id": "4",
+        "label": "DOM manipulation is not possible with vanilla JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "label": "What is the difference between `getElementById`, `querySelector`, and `querySelectorAll`?",
+    "answer": "4",
+    "explanation": "`getElementById` selects an element by ID, `querySelector` selects the first matching element for a CSS selector, and `querySelectorAll` selects all matching elements.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`getElementById` and `querySelector` are identical."
+      },
+      {
+        "id": "2",
+        "label": "`querySelectorAll` selects elements by class name only."
+      },
+      {
+        "id": "3",
+        "label": "`getElementById` selects all elements by ID."
+      },
+      {
+        "id": "4",
+        "label": "`getElementById` selects by ID, `querySelector` selects the first match, and `querySelectorAll` selects all matches."
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "label": "How do you handle cross-browser compatibility in JavaScript?",
+    "answer": "2",
+    "explanation": "Cross-browser compatibility can be managed by using feature detection, polyfills, and transpilers like Babel to ensure code works across different browsers.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using only modern JavaScript features."
+      },
+      {
+        "id": "2",
+        "label": "By using feature detection, polyfills, and transpilers like Babel."
+      },
+      {
+        "id": "3",
+        "label": "By avoiding JavaScript entirely."
+      },
+      {
+        "id": "4",
+        "label": "Cross-browser compatibility is handled automatically by browsers."
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "label": "What is the difference between event delegation and event bubbling?",
+    "answer": "3",
+    "explanation": "Event delegation allows handling events at a higher level in the DOM, while event bubbling is the process by which events propagate up from the target element to the root.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They are the same; both refer to event propagation."
+      },
+      {
+        "id": "2",
+        "label": "Event bubbling stops the event at the target element."
+      },
+      {
+        "id": "3",
+        "label": "Event delegation handles events at a higher level, while bubbling propagates them upwards."
+      },
+      {
+        "id": "4",
+        "label": "Event bubbling and delegation are only used for form events."
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "label": "How do you use local storage and session storage in JavaScript?",
+    "answer": "1",
+    "explanation": "Local storage and session storage can be used to store key-value pairs in the browser, with local storage persisting until explicitly deleted and session storage lasting until the session ends.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the `localStorage` and `sessionStorage` objects to store key-value pairs."
+      },
+      {
+        "id": "2",
+        "label": "By storing data directly in cookies."
+      },
+      {
+        "id": "3",
+        "label": "By using server-side storage methods."
+      },
+      {
+        "id": "4",
+        "label": "JavaScript does not support local or session storage."
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "label": "What are service workers, and how do they work in JavaScript?",
+    "answer": "2",
+    "explanation": "Service workers are background scripts that enable offline capabilities, intercepting network requests and caching resources for offline access.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Service workers are used to improve server performance."
+      },
+      {
+        "id": "2",
+        "label": "Service workers enable offline capabilities by intercepting and caching network requests."
+      },
+      {
+        "id": "3",
+        "label": "Service workers manage event listeners in the DOM."
+      },
+      {
+        "id": "4",
+        "label": "Service workers are used to create web components."
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "label": "How do you handle CORS issues in JavaScript?",
+    "answer": "3",
+    "explanation": "CORS issues can be handled by setting the correct headers on the server, such as `Access-Control-Allow-Origin`, or by using JSONP as an alternative.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By disabling security features in the browser."
+      },
+      {
+        "id": "2",
+        "label": "By using HTTP instead of HTTPS."
+      },
+      {
+        "id": "3",
+        "label": "By setting appropriate CORS headers on the server or using JSONP."
+      },
+      {
+        "id": "4",
+        "label": "CORS issues cannot be resolved."
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "label": "What is the purpose of the `data-` attributes in HTML, and how are they accessed in JavaScript?",
+    "answer": "1",
+    "explanation": "`data-` attributes are used to store custom data in HTML elements, and they can be accessed in JavaScript using `getAttribute()` or the `dataset` property.",
+    "options": [
+      {
+        "id": "1",
+        "label": "`data-` attributes store custom data and can be accessed with `getAttribute()` or `dataset`."
+      },
+      {
+        "id": "2",
+        "label": "`data-` attributes are used to style elements in CSS."
+      },
+      {
+        "id": "3",
+        "label": "`data-` attributes are only used for form validation."
+      },
+      {
+        "id": "4",
+        "label": "They are used to create HTML elements dynamically."
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "label": "How do you manage cookies in JavaScript?",
+    "answer": "4",
+    "explanation": "Cookies can be managed in JavaScript using `document.cookie` to create, read, and delete cookies by setting key-value pairs and options like expiration.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By storing them in local storage."
+      },
+      {
+        "id": "2",
+        "label": "Cookies cannot be managed in JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "By using server-side languages only."
+      },
+      {
+        "id": "4",
+        "label": "By using `document.cookie` to create, read, and delete cookies."
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "label": "What are the differences between `innerHTML`, `outerHTML`, and `textContent`?",
+    "answer": "2",
+    "explanation": "`innerHTML` sets or returns the HTML inside an element, `outerHTML` includes the element itself, and `textContent` deals with only the text inside an element.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They all perform the same function."
+      },
+      {
+        "id": "2",
+        "label": "`innerHTML` affects HTML inside, `outerHTML` includes the element, and `textContent` only handles text."
+      },
+      {
+        "id": "3",
+        "label": "`innerHTML` and `textContent` are identical."
+      },
+      {
+        "id": "4",
+        "label": "`outerHTML` is used for CSS manipulation."
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "label": "What is React, and how does it differ from other frameworks like Angular and Vue?",
+    "answer": "2",
+    "explanation": "React is a JavaScript library for building user interfaces, focusing on components and a virtual DOM, which differs from Angular and Vue's approach to two-way data binding and reactivity.",
+    "options": [
+      {
+        "id": "1",
+        "label": "React is a server-side framework."
+      },
+      {
+        "id": "2",
+        "label": "React is a library for building UIs, focusing on components and virtual DOM."
+      },
+      {
+        "id": "3",
+        "label": "React is identical to Angular."
+      },
+      {
+        "id": "4",
+        "label": "React is primarily used for backend development."
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "label": "How do you manage state in a React application?",
+    "answer": "3",
+    "explanation": "State in React can be managed using the useState hook, context API, or state management libraries like Redux for more complex applications.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using global variables."
+      },
+      {
+        "id": "2",
+        "label": "State management is not required in React."
+      },
+      {
+        "id": "3",
+        "label": "Using hooks like useState, context API, or libraries like Redux."
+      },
+      {
+        "id": "4",
+        "label": "By storing state in the DOM directly."
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "label": "Can you explain the virtual DOM and how it works in React?",
+    "answer": "4",
+    "explanation": "The virtual DOM is an in-memory representation of the real DOM. React uses it to optimize updates by calculating the minimal set of changes needed before applying them to the real DOM.",
+    "options": [
+      {
+        "id": "1",
+        "label": "The virtual DOM is a copy of the HTML file."
+      },
+      {
+        "id": "2",
+        "label": "It is used to store data persistently."
+      },
+      {
+        "id": "3",
+        "label": "The virtual DOM is a CSS file."
+      },
+      {
+        "id": "4",
+        "label": "The virtual DOM optimizes UI updates by minimizing changes before applying them to the real DOM."
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "label": "What is the significance of hooks in React?",
+    "answer": "2",
+    "explanation": "Hooks in React allow function components to use state and other React features without needing to write class components, making them more versatile and easier to use.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Hooks are used for styling components."
+      },
+      {
+        "id": "2",
+        "label": "Hooks enable function components to use state and other React features."
+      },
+      {
+        "id": "3",
+        "label": "Hooks are a replacement for JavaScript functions."
+      },
+      {
+        "id": "4",
+        "label": "Hooks are only used for event handling."
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "label": "How do you handle forms in React?",
+    "answer": "3",
+    "explanation": "Forms in React can be handled using controlled components, where form data is stored in state, or using uncontrolled components with refs.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using plain HTML forms only."
+      },
+      {
+        "id": "2",
+        "label": "Forms cannot be handled in React."
+      },
+      {
+        "id": "3",
+        "label": "By using controlled components or refs for uncontrolled components."
+      },
+      {
+        "id": "4",
+        "label": "By storing form data in the DOM directly."
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "label": "What is Redux, and how does it manage state in a React application?",
+    "answer": "4",
+    "explanation": "Redux is a state management library that centralizes the application's state in a single store, allowing predictable state changes through actions and reducers.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Redux manages CSS styles in React."
+      },
+      {
+        "id": "2",
+        "label": "Redux is a replacement for React's context API."
+      },
+      {
+        "id": "3",
+        "label": "Redux handles routing in React applications."
+      },
+      {
+        "id": "4",
+        "label": "Redux centralizes application state in a single store and handles changes predictably."
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "label": "How do you optimize performance in a React application?",
+    "answer": "1",
+    "explanation": "Performance in React can be optimized using techniques like memoization, code splitting, lazy loading, and optimizing rendering by using shouldComponentUpdate or React.memo.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Using memoization, code splitting, and optimizing rendering."
+      },
+      {
+        "id": "2",
+        "label": "By increasing the number of components."
+      },
+      {
+        "id": "3",
+        "label": "By avoiding the use of state."
+      },
+      {
+        "id": "4",
+        "label": "Performance optimization is not required in React."
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "label": "What are props in React, and how are they different from state?",
+    "answer": "3",
+    "explanation": "Props are immutable inputs passed to components, while state is mutable and managed within the component itself, used to control the component's behavior.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Props and state are identical."
+      },
+      {
+        "id": "2",
+        "label": "Props are used for styling, while state is used for data."
+      },
+      {
+        "id": "3",
+        "label": "Props are immutable inputs, while state is mutable and controls behavior."
+      },
+      {
+        "id": "4",
+        "label": "Props can be changed by the component, while state cannot."
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "label": "How does the context API work in React?",
+    "answer": "1",
+    "explanation": "The context API allows data to be passed through the component tree without needing to pass props down manually at every level, enabling global state management.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It allows global state to be passed through the component tree without props."
+      },
+      {
+        "id": "2",
+        "label": "It is used for routing in React."
+      },
+      {
+        "id": "3",
+        "label": "The context API is a styling tool."
+      },
+      {
+        "id": "4",
+        "label": "It manages event listeners globally."
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "label": "Can you explain the lifecycle methods of a React component?",
+    "answer": "4",
+    "explanation": "React component lifecycle methods include mounting (componentDidMount), updating (componentDidUpdate), and unmounting (componentWillUnmount), used to manage component behavior at different stages.",
+    "options": [
+      {
+        "id": "1",
+        "label": "They are used to manage component styles."
+      },
+      {
+        "id": "2",
+        "label": "Lifecycle methods only run once per component."
+      },
+      {
+        "id": "3",
+        "label": "They are hooks available only in functional components."
+      },
+      {
+        "id": "4",
+        "label": "They manage component behavior during mounting, updating, and unmounting."
+      }
+    ]
+  },
+  {
+    "id": "81",
+    "label": "What is Node.js, and why is it used?",
+    "answer": "2",
+    "explanation": "Node.js is a JavaScript runtime built on Chrome's V8 engine, used for server-side development, enabling JavaScript to be used for backend services.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Node.js is a frontend framework."
+      },
+      {
+        "id": "2",
+        "label": "Node.js is a JavaScript runtime for server-side development."
+      },
+      {
+        "id": "3",
+        "label": "Node.js is a database management system."
+      },
+      {
+        "id": "4",
+        "label": "Node.js is used for designing UI components."
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "label": "How does the event-driven architecture of Node.js work?",
+    "answer": "3",
+    "explanation": "Node.js's event-driven architecture uses an event loop to handle asynchronous operations, allowing non-blocking I/O and efficient handling of multiple requests.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It processes all tasks synchronously."
+      },
+      {
+        "id": "2",
+        "label": "Events are processed after all synchronous code has executed."
+      },
+      {
+        "id": "3",
+        "label": "It uses an event loop to handle asynchronous operations efficiently."
+      },
+      {
+        "id": "4",
+        "label": "It relies on multiple threads to handle events."
+      }
+    ]
+  },
+  {
+    "id": "83",
+    "label": "What is the difference between CommonJS and ES6 modules?",
+    "answer": "1",
+    "explanation": "CommonJS modules use `require` and `module.exports`, while ES6 modules use `import` and `export`, offering better support for static analysis and tree shaking.",
+    "options": [
+      {
+        "id": "1",
+        "label": "CommonJS uses `require`, ES6 uses `import` and `export`."
+      },
+      {
+        "id": "2",
+        "label": "CommonJS is used for frontend, ES6 for backend."
+      },
+      {
+        "id": "3",
+        "label": "ES6 modules are asynchronous, CommonJS modules are synchronous."
+      },
+      {
+        "id": "4",
+        "label": "There is no difference between them."
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "label": "How do you build a REST API using Node.js and Express?",
+    "answer": "4",
+    "explanation": "A REST API in Node.js and Express is built by defining routes for different HTTP methods (GET, POST, PUT, DELETE), handling requests, and sending appropriate responses.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By creating HTML files for each route."
+      },
+      {
+        "id": "2",
+        "label": "By using a different framework like React."
+      },
+      {
+        "id": "3",
+        "label": "By directly manipulating the DOM."
+      },
+      {
+        "id": "4",
+        "label": "By defining routes in Express for different HTTP methods."
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "label": "How do you handle file uploads in a Node.js application?",
+    "answer": "2",
+    "explanation": "File uploads in Node.js can be handled using middleware like `multer`, which processes `multipart/form-data` forms and stores files on the server.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By storing files directly in the database."
+      },
+      {
+        "id": "2",
+        "label": "By using middleware like `multer` to process and store uploaded files."
+      },
+      {
+        "id": "3",
+        "label": "By converting files to JSON format."
+      },
+      {
+        "id": "4",
+        "label": "File uploads are not supported in Node.js."
+      }
+    ]
+  },
+  {
+    "id": "86",
+    "label": "What is middleware in Express, and how is it used?",
+    "answer": "1",
+    "explanation": "Middleware in Express functions as a sequence of functions that process requests and responses, used for logging, authentication, and error handling, among others.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Middleware processes requests and responses, handling tasks like logging and authentication."
+      },
+      {
+        "id": "2",
+        "label": "Middleware is used to connect databases."
+      },
+      {
+        "id": "3",
+        "label": "Middleware is only used for rendering HTML."
+      },
+      {
+        "id": "4",
+        "label": "Middleware automatically handles all errors."
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "label": "How do you implement authentication and authorization in a Node.js application?",
+    "answer": "3",
+    "explanation": "Authentication and authorization in Node.js can be implemented using strategies like JWTs (JSON Web Tokens), OAuth, or session-based authentication with libraries like Passport.js.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using the `setTimeout` function."
+      },
+      {
+        "id": "2",
+        "label": "By storing passwords directly in the application code."
+      },
+      {
+        "id": "3",
+        "label": "Using JWTs, OAuth, or session-based methods with libraries like Passport.js."
+      },
+      {
+        "id": "4",
+        "label": "Authentication is not required in Node.js applications."
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "label": "What is the role of the `package.json` file in a Node.js project?",
+    "answer": "4",
+    "explanation": "The `package.json` file holds metadata about the Node.js project, including dependencies, scripts, and project information, allowing for easy management and installation of packages.",
+    "options": [
+      {
+        "id": "1",
+        "label": "It is used to store environment variables."
+      },
+      {
+        "id": "2",
+        "label": "It contains the HTML structure of the application."
+      },
+      {
+        "id": "3",
+        "label": "It stores the database schema."
+      },
+      {
+        "id": "4",
+        "label": "It holds project metadata, including dependencies and scripts."
+      }
+    ]
+  },
+  {
+    "id": "89",
+    "label": "How do you handle errors in a Node.js application?",
+    "answer": "1",
+    "explanation": "Errors in Node.js can be handled using try/catch blocks, error-handling middleware in Express, and emitting error events for asynchronous operations.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Using try/catch blocks, error-handling middleware, and emitting error events."
+      },
+      {
+        "id": "2",
+        "label": "By ignoring them and continuing execution."
+      },
+      {
+        "id": "3",
+        "label": "Errors cannot be handled in Node.js."
+      },
+      {
+        "id": "4",
+        "label": "By restarting the Node.js application."
+      }
+    ]
+  },
+  {
+    "id": "90",
+    "label": "What are streams in Node.js, and how do they work?",
+    "answer": "2",
+    "explanation": "Streams in Node.js are used to handle reading and writing data in chunks, allowing efficient processing of large files and network data without loading the entire content into memory.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Streams are used to manipulate arrays."
+      },
+      {
+        "id": "2",
+        "label": "Streams handle data in chunks, enabling efficient processing of large files and network data."
+      },
+      {
+        "id": "3",
+        "label": "Streams are only used for rendering HTML."
+      },
+      {
+        "id": "4",
+        "label": "Streams are a type of database in Node.js."
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "label": "What are the different types of testing in JavaScript?",
+    "answer": "2",
+    "explanation": "The different types of testing in JavaScript include unit testing, integration testing, and end-to-end testing, each focusing on different levels of the application.",
+    "options": [
+      {
+        "id": "1",
+        "label": "JavaScript only supports unit testing."
+      },
+      {
+        "id": "2",
+        "label": "Unit testing, integration testing, and end-to-end testing."
+      },
+      {
+        "id": "3",
+        "label": "Testing is not supported in JavaScript."
+      },
+      {
+        "id": "4",
+        "label": "Only manual testing is possible in JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "92",
+    "label": "How do you write unit tests for a JavaScript function?",
+    "answer": "1",
+    "explanation": "Unit tests for a JavaScript function are written using testing frameworks like Jest or Mocha, focusing on testing individual units of code in isolation.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Using frameworks like Jest or Mocha to test individual functions."
+      },
+      {
+        "id": "2",
+        "label": "By manually checking the function output in the browser."
+      },
+      {
+        "id": "3",
+        "label": "By writing the tests directly in the HTML file."
+      },
+      {
+        "id": "4",
+        "label": "JavaScript functions cannot be unit tested."
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "label": "What tools do you use for testing JavaScript code?",
+    "answer": "3",
+    "explanation": "Tools commonly used for testing JavaScript code include Jest, Mocha, Chai, Jasmine, and Cypress, each providing different features for unit, integration, and end-to-end testing.",
+    "options": [
+      {
+        "id": "1",
+        "label": "Only the browser console is used for testing."
+      },
+      {
+        "id": "2",
+        "label": "JavaScript does not require testing tools."
+      },
+      {
+        "id": "3",
+        "label": "Tools like Jest, Mocha, Chai, Jasmine, and Cypress."
+      },
+      {
+        "id": "4",
+        "label": "Only IDE-based testing tools are used."
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "label": "How do you mock data in tests?",
+    "answer": "4",
+    "explanation": "Data in tests can be mocked by creating mock objects or functions that simulate the behavior of real objects, often using libraries like Sinon.js or the mocking utilities in Jest.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By using real data in all tests."
+      },
+      {
+        "id": "2",
+        "label": "Mocking is not required in JavaScript testing."
+      },
+      {
+        "id": "3",
+        "label": "By writing the tests in a separate file."
+      },
+      {
+        "id": "4",
+        "label": "By creating mock objects or functions with libraries like Sinon.js or Jest."
+      }
+    ]
+  },
+  {
+    "id": "95",
+    "label": "How do you debug JavaScript code in the browser?",
+    "answer": "2",
+    "explanation": "JavaScript code can be debugged in the browser using developer tools, which provide features like breakpoints, watch expressions, and the console to inspect and trace code execution.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By adding alerts in the code."
+      },
+      {
+        "id": "2",
+        "label": "Using browser developer tools to set breakpoints and inspect variables."
+      },
+      {
+        "id": "3",
+        "label": "By writing the entire code in the console."
+      },
+      {
+        "id": "4",
+        "label": "JavaScript code cannot be debugged in the browser."
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "label": "What is the purpose of `console.log`, and how do you use it effectively?",
+    "answer": "1",
+    "explanation": "`console.log` is used to output information to the browser console, and it can be used effectively by logging relevant data at key points in the code to trace execution.",
+    "options": [
+      {
+        "id": "1",
+        "label": "To output information to the console for debugging purposes."
+      },
+      {
+        "id": "2",
+        "label": "To write logs to a file on the server."
+      },
+      {
+        "id": "3",
+        "label": "To alert users to errors in the code."
+      },
+      {
+        "id": "4",
+        "label": "To replace all document writes in JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "label": "How do you handle asynchronous code in tests?",
+    "answer": "3",
+    "explanation": "Asynchronous code in tests can be handled by returning promises, using async/await, or using callbacks with done() to ensure the test waits for completion.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By converting asynchronous code to synchronous code."
+      },
+      {
+        "id": "2",
+        "label": "By ignoring the asynchronous parts."
+      },
+      {
+        "id": "3",
+        "label": "By returning promises, using async/await, or using done() callbacks."
+      },
+      {
+        "id": "4",
+        "label": "Asynchronous code cannot be tested."
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "label": "What is the role of `assert` in testing?",
+    "answer": "4",
+    "explanation": "`assert` is used in testing to check if a given condition is true, throwing an error if it is not, thus validating the correctness of the code being tested.",
+    "options": [
+      {
+        "id": "1",
+        "label": "To store test results."
+      },
+      {
+        "id": "2",
+        "label": "To handle errors in the code."
+      },
+      {
+        "id": "3",
+        "label": "To create mock data for tests."
+      },
+      {
+        "id": "4",
+        "label": "To validate conditions in tests and throw errors if they are not met."
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "label": "How do you ensure code quality in a JavaScript project?",
+    "answer": "2",
+    "explanation": "Code quality in a JavaScript project can be ensured by using linters like ESLint, writing unit tests, following best practices, and conducting regular code reviews.",
+    "options": [
+      {
+        "id": "1",
+        "label": "By manually checking each line of code."
+      },
+      {
+        "id": "2",
+        "label": "Using linters, writing tests, following best practices, and conducting code reviews."
+      },
+      {
+        "id": "3",
+        "label": "By ignoring all warnings and errors."
+      },
+      {
+        "id": "4",
+        "label": "Code quality is not important in JavaScript."
+      }
+    ]
+  },
+  {
+    "id": "100",
+    "label": "Can you explain what Test-Driven Development (TDD) is and how it applies to JavaScript?",
+    "answer": "3",
+    "explanation": "Test-Driven Development (TDD) is a development process where tests are written before the code, ensuring the code meets the test criteria and improving the reliability and maintainability of the code.",
+    "options": [
+      {
+        "id": "1",
+        "label": "TDD is a design pattern for JavaScript functions."
+      },
+      {
+        "id": "2",
+        "label": "TDD is not applicable to JavaScript."
+      },
+      {
+        "id": "3",
+        "label": "TDD involves writing tests before the code to ensure it meets the requirements."
+      },
+      {
+        "id": "4",
+        "label": "TDD is used to optimize performance in JavaScript applications."
+      }
+    ]
+  }
+]
